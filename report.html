@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Beispielbericht</title>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<h1>Beispielbericht</h1>
+
+<p>Owe Jessen</p>
+
+<p>Fri Oct 25 15:07:06 2013</p>
+
+<p>\pagebreak</p>
+
+<h1>Inhaltsverzeichnis</h1>
+
+<ul>
+<li>Text</li>
+<li>Tables</li>
+<li>Plots</li>
+</ul>
+
+<h1>Text</h1>
+
+<h2>Overview</h2>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.[<sup>1]</sup> </p>
+
+<p>[<sup>1]:</sup> Vgl. <a href="http://www.bis.org/publ/bcbs196.pdf">BCBS 196</a></p>
+
+<h1>Tables</h1>
+
+<table><thead>
+<tr>
+<th align="center">Sepal.Length</th>
+<th align="center">Sepal.Width</th>
+<th align="center">Petal.Length</th>
+<th align="center">Petal.Width</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">5.1</td>
+<td align="center">3.5</td>
+<td align="center">1.4</td>
+<td align="center">0.2</td>
+</tr>
+<tr>
+<td align="center">4.9</td>
+<td align="center">3</td>
+<td align="center">1.4</td>
+<td align="center">0.2</td>
+</tr>
+<tr>
+<td align="center">4.7</td>
+<td align="center">3.2</td>
+<td align="center">1.3</td>
+<td align="center">0.2</td>
+</tr>
+<tr>
+<td align="center">4.6</td>
+<td align="center">3.1</td>
+<td align="center">1.5</td>
+<td align="center">0.2</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">3.6</td>
+<td align="center">1.4</td>
+<td align="center">0.2</td>
+</tr>
+<tr>
+<td align="center">5.4</td>
+<td align="center">3.9</td>
+<td align="center">1.7</td>
+<td align="center">0.4</td>
+</tr>
+</tbody></table>
+
+<p>Table: Table continues below</p>
+
+<table><thead>
+<tr>
+<th align="center">Species</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="center">setosa</td>
+</tr>
+<tr>
+<td align="center">setosa</td>
+</tr>
+</tbody></table>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.[<sup>5]</sup> 
+[<sup>5]:</sup> Vgl. <a href="http://statistik.econ.kit.edu/download/doc_secure1/tr_composite_goodness_tests.pdf">Chernobai et. al</a>.</p>
+
+<h1>Plots</h1>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-3"/> </p>
+
+<h1>References</h1>
+
+<ul>
+<li><strong>BCBS 196</strong> <em>Operational Risk –- Supervisory Guidelines for the Advanced Measurement Approaches</em>, <a href="http://www.bis.org/publ/bcbs196.pdf">http://www.bis.org/publ/bcbs196.pdf</a></li>
+<li><strong>Chernobai et. al.</strong> <em>Composite Goodness-of-Fit Tests for Left-Truncated Loss Samples</em> <a href="http://statistik.econ.kit.edu/download/doc_secure1/tr_composite_goodness_tests.pdf">http://statistik.econ.kit.edu/download/doc_secure1/tr_composite_goodness_tests.pdf</a></li>
+</ul>
+
+</body>
+
+</html>

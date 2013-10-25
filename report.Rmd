@@ -1,0 +1,64 @@
+```{r, echo=FALSE}
+panderOptions("table.style", "rmarkdown")
+
+```
+
+
+Beispielbericht
+========================================================
+
+Owe Jessen
+
+`r date()`
+
+\pagebreak
+
+Inhaltsverzeichnis
+========================================================
+
+
+- Text
+- Tables
+- Plots
+
+
+Text
+========================================================
+
+Overview
+-------------------------
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.[^1] 
+
+[^1]: Vgl. [BCBS 196][bcbs196]
+
+
+
+Tables
+========================================================
+```{r , results='asis',echo=FALSE}
+
+  pander(head(iris))
+
+```
+
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.[^5] 
+[^5]: Vgl. [Chernobai et. al][chernobai].
+
+Plots
+========================================================
+
+```{r, echo=FALSE,dpi=72,fig.height=12/2.54,fig.width=16/2.54}
+ggplot(iris,aes(x=Sepal.Length, y = Sepal.Width, color = Species)) +geom_point()+facet_grid(.~Species)
+```
+
+
+References
+========================================================
+
+- **BCBS 196** *Operational Risk –- Supervisory Guidelines for the Advanced Measurement Approaches*, [http://www.bis.org/publ/bcbs196.pdf][bcbs196]
+- **Chernobai et. al.** *Composite Goodness-of-Fit Tests for Left-Truncated Loss Samples* [http://statistik.econ.kit.edu/download/doc_secure1/tr_composite_goodness_tests.pdf][chernobai]
+
+
+[chernobai]: http://statistik.econ.kit.edu/download/doc_secure1/tr_composite_goodness_tests.pdf 
+[bcbs196]: http://www.bis.org/publ/bcbs196.pdf 
